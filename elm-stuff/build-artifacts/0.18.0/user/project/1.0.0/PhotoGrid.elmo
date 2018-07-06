@@ -1,0 +1,44 @@
+var _user$project$PhotoGrid$update = F2(
+	function (msg, model) {
+		return model;
+	});
+var _user$project$PhotoGrid$model = {
+	photos: A2(_elm_lang$core$List$repeat, 12, _user$project$Types$examplePhoto)
+};
+var _user$project$PhotoGrid$photoView = function (photo) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('photo'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$img,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$src('instapic.jpg'),
+					_1: {ctor: '[]'}
+				},
+				{ctor: '[]'}),
+			_1: {ctor: '[]'}
+		});
+};
+var _user$project$PhotoGrid$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('photo-grid'),
+			_1: {ctor: '[]'}
+		},
+		A2(_elm_lang$core$List$map, _user$project$PhotoGrid$photoView, model.photos));
+};
+var _user$project$PhotoGrid$main = _elm_lang$html$Html$beginnerProgram(
+	{model: _user$project$PhotoGrid$model, view: _user$project$PhotoGrid$view, update: _user$project$PhotoGrid$update})();
+var _user$project$PhotoGrid$Model = function (a) {
+	return {photos: a};
+};
+var _user$project$PhotoGrid$Nothing = {ctor: 'Nothing'};
