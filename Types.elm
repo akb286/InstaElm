@@ -1,5 +1,4 @@
 module Types exposing (..)
-
 import List exposing (repeat)
 
 type alias Photo =
@@ -18,8 +17,8 @@ type alias Comment =
 
 examplePhoto =
   { url = "instapic.jpg"
-  , username = "Rudolfo"
-  , location = "Canada"
+  , username = "Jonny"
+  , location = "USA"
   , likeCount = 100
   , commentCount = 20
   , comments = repeat 12 exampleComment
@@ -30,6 +29,4 @@ exampleComment =
   , message = "Hello World"
   }
 
-type Msg = OpenPhoto Photo
-        | ClosePhoto
-        | LoadMoreComments
+type Msg = Nothing

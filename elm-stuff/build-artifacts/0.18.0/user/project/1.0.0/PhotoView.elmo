@@ -1,0 +1,46 @@
+var _user$project$PhotoView$update = F2(
+	function (msg, model) {
+		return model;
+	});
+var _user$project$PhotoView$photoView = function (photo) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('photo-view'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$img,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$src('instapic.jpg'),
+					_1: {ctor: '[]'}
+				},
+				{ctor: '[]'}),
+			_1: {ctor: '[]'}
+		});
+};
+var _user$project$PhotoView$view = function (_p0) {
+	var _p1 = _p0;
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('photo-view'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: _user$project$PhotoView$photoView(_p1.photo),
+			_1: {ctor: '[]'}
+		});
+};
+var _user$project$PhotoView$model = {photo: _user$project$Types$examplePhoto};
+var _user$project$PhotoView$main = _elm_lang$html$Html$beginnerProgram(
+	{model: _user$project$PhotoView$model, view: _user$project$PhotoView$view, update: _user$project$PhotoView$update})();
+var _user$project$PhotoView$Model = function (a) {
+	return {photo: a};
+};

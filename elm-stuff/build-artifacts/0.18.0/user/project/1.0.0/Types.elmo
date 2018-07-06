@@ -1,8 +1,8 @@
 var _user$project$Types$exampleComment = {username: 'Person', message: 'Hello World'};
 var _user$project$Types$examplePhoto = {
 	url: 'instapic.jpg',
-	username: 'Rudolfo',
-	location: 'Canada',
+	username: 'Jonny',
+	location: 'USA',
 	likeCount: 100,
 	commentCount: 20,
 	comments: A2(_elm_lang$core$List$repeat, 12, _user$project$Types$exampleComment)
@@ -15,8 +15,4 @@ var _user$project$Types$Comment = F2(
 	function (a, b) {
 		return {username: a, message: b};
 	});
-var _user$project$Types$LoadMoreComments = {ctor: 'LoadMoreComments'};
-var _user$project$Types$ClosePhoto = {ctor: 'ClosePhoto'};
-var _user$project$Types$OpenPhoto = function (a) {
-	return {ctor: 'OpenPhoto', _0: a};
-};
+var _user$project$Types$Nothing = {ctor: 'Nothing'};
